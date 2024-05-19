@@ -6,7 +6,7 @@ const conteudoRoutes = require('./routes/conteudoRoutes')
 const instrucaoRoutes = require('./routes/instrucaoRoutes')
 const genericoRoutes = require('./routes/genericoRoutes')
 const YAML = require('yamljs');
-const swaggerDocument = YAML.load('./swagger.yaml');
+const swaggerDocument = YAML.load('swagger.yaml');
 app.use(express.json())
 
 app.use('/inserirInstrucao', instrucaoRoutes)
