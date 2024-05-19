@@ -12,7 +12,7 @@ const path = require('path');
 
 // Caminho absoluto para o arquivo YAML
 const yamlPath = path.resolve(__dirname, 'swagger.yaml');
-
+console.log(yamlPath)
 // Carrega o arquivo YAML de forma assíncrona
 fs.readFile(yamlPath, 'utf8', (err, data) => {
     if (err) {
