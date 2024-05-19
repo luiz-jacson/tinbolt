@@ -6,6 +6,7 @@ const conteudoRoutes = require('./routes/conteudoRoutes');
 const instrucaoRoutes = require('./routes/instrucaoRoutes');
 const genericoRoutes = require('./routes/genericoRoutes');
 const YAML = require('yamljs');
+const fs = require('fs');
 
 const path = require('path');
 
