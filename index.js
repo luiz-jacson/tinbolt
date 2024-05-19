@@ -1,3 +1,12 @@
+const express = require('express');
+const app = express();
+const swaggerUi = require('swagger-ui-express');
+const PORT = process.env.PORT || 3000; 
+const conteudoRoutes = require('./routes/conteudoRoutes');
+const instrucaoRoutes = require('./routes/instrucaoRoutes');
+const genericoRoutes = require('./routes/genericoRoutes');
+const YAML = require('yamljs');
+
 const path = require('path');
 
 // Caminho absoluto para o arquivo YAML
