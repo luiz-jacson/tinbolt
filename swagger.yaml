@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Tinbolt-GEMINI
+  description: API feita pelo SQUAD 20
+  version: 1.0.0
+paths:
+  /inserirInstrucao:
+    post:
+      summary: Insere uma instrução
+      tags: [Especificos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                instrucao:
+                  type: string
+      responses:
+        '200':
+          description: Instrução inserida com sucesso
+  /gerarConteudoEspecifico:
+    post:
+      summary: Gera conteúdo específico
+      tags: [Especificos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                prompt:
+                  type: string
+      responses:
+        '200':
+          description: Conteúdo gerado com sucesso
+  /gerarConteudoGenerico:
+    post:
+      summary: Gera conteúdo genérico
+      tags: [Genericos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                prompt:
+                  type: string
+      responses:
+        '200':
+          description: Conteúdo gerado com sucesso
+tags: 
+  - name:  Genericos
+    description: Endpoints relacionados à geração de conteúdos genéricos
+  - name: Especificos
+    description: Endpoints relacionados à geração de conteúdos específicos

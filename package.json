@@ -1,0 +1,28 @@
+{
+  "name": "residenciasoftware2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexLlama.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.9.0",
+    "@llama-node/llama-cpp": "^0.1.6",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "llama-node": "^0.1.6",
+    "memory-cache": "^0.2.0",
+    "openai": "^4.40.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
